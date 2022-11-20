@@ -16,5 +16,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            // model object를 environment에 추가하면 객체를 모든 subview에서 사용할 수 있음.
+            // subview가 environment의 model object를 필요로 하지만 미리보기에
+            // environmentObject(_:) modifier가 없는 경우 미리보기를 실패함.
+            .environmentObject(ModelData())
     }
 }

@@ -19,6 +19,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     // Landmark structure 사용자는 이미지 자체에만 관심이 있으므로 private
     private var imageName: String
