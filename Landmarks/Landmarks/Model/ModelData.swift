@@ -12,8 +12,12 @@ import Combine
 // observable object는 subscriber가 변경 사항을 선택할 수 있도록 데이터 변경 사항을 Publish해야 함.
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    
     // hike 데이터를 처음 로드한 후에는 수정하지 않기 때문에 @Published attribute로 표시할 필요가 없음.
     var hikes: [Hike] = load("hikeData.json")
+    
+    // 사용자가 프로필 뷰를 닫은 후에도 지속되는 사용자 프로필의 인스턴스를 포함하도록 @Published var 추가
+    @Published var profile = Profile.default
     
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }

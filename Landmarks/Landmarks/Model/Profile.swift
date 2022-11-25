@@ -10,7 +10,9 @@ import Foundation
 struct Profile {
     var username: String
     var prefersNotifications = true
+    // 선호 시즌
     var seasonalPhoto = Season.winter
+    // 랜드마크 방문 목표 날짜
     var goalDate = Date()
     
     static let `default` = Profile(username: "yeolmok")
