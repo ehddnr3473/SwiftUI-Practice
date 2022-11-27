@@ -20,7 +20,7 @@ class KakaoAuthVM: ObservableObject {
     
     // 메인 스레드에서 Task블록을 수행할 수 있게끔 만들어줌.
     @MainActor
-    func login() {
+    func kakaoLogin() {
         Task {
             // 카카오톡 간편 로그인이 가능한지 확인 == 카카오톡이 설치되어 있는지 확인
             if (UserApi.isKakaoTalkLoginAvailable()) {

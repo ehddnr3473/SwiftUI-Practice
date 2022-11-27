@@ -15,6 +15,9 @@ struct LoginPracticeApp: App {
     // AppDelegate로 초기화해주는 경우
 //    @UIApplicationDelegateAdaptor var appDelegate: MyAppDelegate
     
+    private let kakaoAuthVM = KakaoAuthVM()
+    private let appleAuthVM = AppleAuthVM()
+    
     init() {
         guard let appKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] as? String else { return }
         // Kakao SDK 초기화
@@ -24,7 +27,7 @@ struct LoginPracticeApp: App {
     var body: some Scene {
         WindowGroup {
             // onOpenURL()을 사용해 커스텀 URL 스킴 처리
-            ContentView().onOpenURL { url in
+            LoginView(kakaoAuthVM: kakaoAuthVM, appleAuthVM: appleAuthVM).onOpenURL { url in
                 if (AuthApi.isKakaoTalkLoginUrl(url)) {
                     AuthController.handleOpenUrl(url: url)
                 }

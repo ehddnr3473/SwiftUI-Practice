@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B479FE229336DC000DA4080 /* AppleAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B479FE129336DC000DA4080 /* AppleAuthVM.swift */; };
+		6B479FE42933725F00DA4080 /* LoginWithAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B479FE32933725F00DA4080 /* LoginWithAppleButtonView.swift */; };
 		6BE248FC29324E4100D8BD64 /* LoginPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE248FB29324E4100D8BD64 /* LoginPracticeApp.swift */; };
-		6BE248FE29324E4100D8BD64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE248FD29324E4100D8BD64 /* ContentView.swift */; };
+		6BE248FE29324E4100D8BD64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE248FD29324E4100D8BD64 /* LoginView.swift */; };
 		6BE2490029324E4200D8BD64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE248FF29324E4200D8BD64 /* Assets.xcassets */; };
 		6BE2490329324E4200D8BD64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE2490229324E4200D8BD64 /* Preview Assets.xcassets */; };
 		6BE2490B2932504900D8BD64 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6BE2490A2932504900D8BD64 /* KakaoSDK */; };
@@ -27,9 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B479FE029336D1600DA4080 /* LoginPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginPractice.entitlements; sourceTree = "<group>"; };
+		6B479FE129336DC000DA4080 /* AppleAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthVM.swift; sourceTree = "<group>"; };
+		6B479FE32933725F00DA4080 /* LoginWithAppleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleButtonView.swift; sourceTree = "<group>"; };
 		6BE248F829324E4100D8BD64 /* LoginPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE248FB29324E4100D8BD64 /* LoginPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPracticeApp.swift; sourceTree = "<group>"; };
-		6BE248FD29324E4100D8BD64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6BE248FD29324E4100D8BD64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6BE248FF29324E4200D8BD64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BE2490229324E4200D8BD64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6BE2491E293250AE00D8BD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B479FE52933793700DA4080 /* Kakao */ = {
+			isa = PBXGroup;
+			children = (
+				6BE24925293271FE00D8BD64 /* KakaoAuthVM.swift */,
+			);
+			path = Kakao;
+			sourceTree = "<group>";
+		};
+		6B479FE62933794800DA4080 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				6B479FE129336DC000DA4080 /* AppleAuthVM.swift */,
+				6B479FE32933725F00DA4080 /* LoginWithAppleButtonView.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
 		6BE248EF29324E4100D8BD64 = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +101,13 @@
 		6BE248FA29324E4100D8BD64 /* LoginPractice */ = {
 			isa = PBXGroup;
 			children = (
+				6B479FE029336D1600DA4080 /* LoginPractice.entitlements */,
 				6BE2492429325CCE00D8BD64 /* Delegate */,
 				6BE2491E293250AE00D8BD64 /* Info.plist */,
-				6BE24925293271FE00D8BD64 /* KakaoAuthVM.swift */,
+				6B479FE52933793700DA4080 /* Kakao */,
+				6B479FE62933794800DA4080 /* Apple */,
 				6BE248FB29324E4100D8BD64 /* LoginPracticeApp.swift */,
-				6BE248FD29324E4100D8BD64 /* ContentView.swift */,
+				6BE248FD29324E4100D8BD64 /* LoginView.swift */,
 				6BE248FF29324E4200D8BD64 /* Assets.xcassets */,
 				6BE2490129324E4200D8BD64 /* Preview Content */,
 				6BE2491F2932522200D8BD64 /* Config.xcconfig */,
@@ -193,10 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BE248FE29324E4100D8BD64 /* ContentView.swift in Sources */,
+				6BE248FE29324E4100D8BD64 /* LoginView.swift in Sources */,
 				6BE24921293258A700D8BD64 /* MyAppDelegate.swift in Sources */,
 				6BE248FC29324E4100D8BD64 /* LoginPracticeApp.swift in Sources */,
+				6B479FE229336DC000DA4080 /* AppleAuthVM.swift in Sources */,
 				6BE24926293271FE00D8BD64 /* KakaoAuthVM.swift in Sources */,
+				6B479FE42933725F00DA4080 /* LoginWithAppleButtonView.swift in Sources */,
 				6BE2492329325C5800D8BD64 /* MySceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginPractice/LoginPractice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoginPractice/Preview Content\"";
@@ -357,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginPractice/LoginPractice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoginPractice/Preview Content\"";
