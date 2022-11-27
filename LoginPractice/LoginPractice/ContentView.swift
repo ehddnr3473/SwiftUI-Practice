@@ -9,16 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var kakaoAuthVM = KakaoAuthVM()
+    @ObservedObject var kakaoAuthVM = KakaoAuthVM()
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("로그인 상태: \(kakaoAuthVM.loginStatus)")
+            
             Button("카카오 로그인") {
                 kakaoAuthVM.login()
             }
+            .frame(width: 200, height: 50)
+            .border(.black, width: 1)
+            
             Button("카카오 로그아웃") {
-                kakaoAuthVM.logout()
+                kakaoAuthVM.kakaoLogout()
             }
+            .frame(width: 200, height: 50)
+            .border(.black, width: 1)
+            
+//            Button("애플 로그인") {
+//
+//            }
+//            .frame(width: 200, height: 50)
+//            .border(.black, width: 1)
+//
+//            Button("애플 로그아웃") {
+//
+//            }
+//            .frame(width: 200, height: 50)
+//            .border(.black, width: 1)
         }
     }
 }
