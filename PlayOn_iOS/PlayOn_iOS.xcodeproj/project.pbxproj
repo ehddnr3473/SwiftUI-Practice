@@ -71,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B50141229388D3500CB413D /* Findings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Findings;
+			sourceTree = "<group>";
+		};
 		6B988DBF2933BE85008B0DB5 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +101,7 @@
 		6B988DCA2933BE85008B0DB5 /* PlayOn_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6B50141229388D3500CB413D /* Findings */,
 				6B988DCB2933BE85008B0DB5 /* PlayOn_iOSApp.swift */,
 				6B988DCD2933BE85008B0DB5 /* ContentView.swift */,
 				6B988DCF2933BE87008B0DB5 /* Assets.xcassets */,
