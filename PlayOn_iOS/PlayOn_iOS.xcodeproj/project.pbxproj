@@ -11,6 +11,9 @@
 		6B456B64293B88FD00AD2B93 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B456B63293B88FD00AD2B93 /* Pet.swift */; };
 		6B456B66293B8FFE00AD2B93 /* MyEqualWidthHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B456B65293B8FFE00AD2B93 /* MyEqualWidthHStack.swift */; };
 		6B456B68293B9B6800AD2B93 /* TestCustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B456B67293B9B6800AD2B93 /* TestCustomGridView.swift */; };
+		6B8EA4FD295ED47000C4A3EB /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EA4FC295ED47000C4A3EB /* MyTabView.swift */; };
+		6B8EA4FF295ED53500C4A3EB /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EA4FE295ED53500C4A3EB /* FirstTabView.swift */; };
+		6B8EA501295ED54D00C4A3EB /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EA500295ED54D00C4A3EB /* SecondTabView.swift */; };
 		6B988DCC2933BE85008B0DB5 /* PlayOn_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B988DCB2933BE85008B0DB5 /* PlayOn_iOSApp.swift */; };
 		6B988DCE2933BE85008B0DB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B988DCD2933BE85008B0DB5 /* ContentView.swift */; };
 		6B988DD02933BE87008B0DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B988DCF2933BE87008B0DB5 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 		6B456B63293B88FD00AD2B93 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		6B456B65293B8FFE00AD2B93 /* MyEqualWidthHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEqualWidthHStack.swift; sourceTree = "<group>"; };
 		6B456B67293B9B6800AD2B93 /* TestCustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomGridView.swift; sourceTree = "<group>"; };
+		6B8EA4FC295ED47000C4A3EB /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		6B8EA4FE295ED53500C4A3EB /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		6B8EA500295ED54D00C4A3EB /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		6B988DC82933BE85008B0DB5 /* PlayOn_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayOn_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B988DCB2933BE85008B0DB5 /* PlayOn_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOn_iOSApp.swift; sourceTree = "<group>"; };
 		6B988DCD2933BE85008B0DB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,9 +99,20 @@
 		6B50141229388D3500CB413D /* Findings */ = {
 			isa = PBXGroup;
 			children = (
+				6B8EA4FB295ED46200C4A3EB /* TabView */,
 				6B456B62293B88E100AD2B93 /* CustomGrid */,
 			);
 			path = Findings;
+			sourceTree = "<group>";
+		};
+		6B8EA4FB295ED46200C4A3EB /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				6B8EA4FC295ED47000C4A3EB /* MyTabView.swift */,
+				6B8EA4FE295ED53500C4A3EB /* FirstTabView.swift */,
+				6B8EA500295ED54D00C4A3EB /* SecondTabView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 		6B988DBF2933BE85008B0DB5 = {
@@ -287,10 +304,13 @@
 			files = (
 				6B456B61293B86FC00AD2B93 /* CustomGridView.swift in Sources */,
 				6B456B66293B8FFE00AD2B93 /* MyEqualWidthHStack.swift in Sources */,
+				6B8EA4FD295ED47000C4A3EB /* MyTabView.swift in Sources */,
 				6B456B64293B88FD00AD2B93 /* Pet.swift in Sources */,
+				6B8EA501295ED54D00C4A3EB /* SecondTabView.swift in Sources */,
 				6B456B68293B9B6800AD2B93 /* TestCustomGridView.swift in Sources */,
 				6B988DCE2933BE85008B0DB5 /* ContentView.swift in Sources */,
 				6B988DCC2933BE85008B0DB5 /* PlayOn_iOSApp.swift in Sources */,
+				6B8EA4FF295ED53500C4A3EB /* FirstTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
