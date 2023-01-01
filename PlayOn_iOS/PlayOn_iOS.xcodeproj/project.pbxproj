@@ -29,6 +29,7 @@
 		6BC27E102961A7F10031CE3D /* AdvancedCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E0F2961A7F10031CE3D /* AdvancedCharts.swift */; };
 		6BC27E122961AE460031CE3D /* PopulationProgressCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E112961AE460031CE3D /* PopulationProgressCharts.swift */; };
 		6BC27E142961B80A0031CE3D /* DateCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E132961B80A0031CE3D /* DateCreator.swift */; };
+		6BC27E162961C4C10031CE3D /* PopulationProgressLineCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E152961C4C10031CE3D /* PopulationProgressLineCharts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		6BC27E0F2961A7F10031CE3D /* AdvancedCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCharts.swift; sourceTree = "<group>"; };
 		6BC27E112961AE460031CE3D /* PopulationProgressCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationProgressCharts.swift; sourceTree = "<group>"; };
 		6BC27E132961B80A0031CE3D /* DateCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCreator.swift; sourceTree = "<group>"; };
+		6BC27E152961C4C10031CE3D /* PopulationProgressLineCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationProgressLineCharts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				6BC27E0D2961A0A80031CE3D /* SimplePopulationCharts.swift */,
 				6BC27E0F2961A7F10031CE3D /* AdvancedCharts.swift */,
 				6BC27E112961AE460031CE3D /* PopulationProgressCharts.swift */,
+				6BC27E152961C4C10031CE3D /* PopulationProgressLineCharts.swift */,
 				6BC27E132961B80A0031CE3D /* DateCreator.swift */,
 			);
 			path = Charts;
@@ -358,6 +361,7 @@
 				6B988DCE2933BE85008B0DB5 /* ContentView.swift in Sources */,
 				6B988DCC2933BE85008B0DB5 /* PlayOn_iOSApp.swift in Sources */,
 				6BC27E122961AE460031CE3D /* PopulationProgressCharts.swift in Sources */,
+				6BC27E162961C4C10031CE3D /* PopulationProgressLineCharts.swift in Sources */,
 				6B8EA4FF295ED53500C4A3EB /* FirstTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
