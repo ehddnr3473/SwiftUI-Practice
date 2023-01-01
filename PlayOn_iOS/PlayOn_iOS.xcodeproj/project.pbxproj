@@ -27,6 +27,8 @@
 		6B988DE92933BE87008B0DB5 /* PlayOn_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B988DE82933BE87008B0DB5 /* PlayOn_iOSUITestsLaunchTests.swift */; };
 		6BC27E0E2961A0A80031CE3D /* SimplePopulationCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E0D2961A0A80031CE3D /* SimplePopulationCharts.swift */; };
 		6BC27E102961A7F10031CE3D /* AdvancedCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E0F2961A7F10031CE3D /* AdvancedCharts.swift */; };
+		6BC27E122961AE460031CE3D /* PopulationProgressCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E112961AE460031CE3D /* PopulationProgressCharts.swift */; };
+		6BC27E142961B80A0031CE3D /* DateCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC27E132961B80A0031CE3D /* DateCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		6B988DE82933BE87008B0DB5 /* PlayOn_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOn_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6BC27E0D2961A0A80031CE3D /* SimplePopulationCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePopulationCharts.swift; sourceTree = "<group>"; };
 		6BC27E0F2961A7F10031CE3D /* AdvancedCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCharts.swift; sourceTree = "<group>"; };
+		6BC27E112961AE460031CE3D /* PopulationProgressCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationProgressCharts.swift; sourceTree = "<group>"; };
+		6BC27E132961B80A0031CE3D /* DateCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 			children = (
 				6BC27E0D2961A0A80031CE3D /* SimplePopulationCharts.swift */,
 				6BC27E0F2961A7F10031CE3D /* AdvancedCharts.swift */,
+				6BC27E112961AE460031CE3D /* PopulationProgressCharts.swift */,
+				6BC27E132961B80A0031CE3D /* DateCreator.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				6B8EA4FD295ED47000C4A3EB /* MyTabView.swift in Sources */,
 				6B456B64293B88FD00AD2B93 /* Pet.swift in Sources */,
 				6BC27E0E2961A0A80031CE3D /* SimplePopulationCharts.swift in Sources */,
+				6BC27E142961B80A0031CE3D /* DateCreator.swift in Sources */,
 				6B8EA501295ED54D00C4A3EB /* SecondTabView.swift in Sources */,
 				6B456B68293B9B6800AD2B93 /* TestCustomGridView.swift in Sources */,
 				6B8EA506295EDA1E00C4A3EB /* Fruit.swift in Sources */,
@@ -350,6 +357,7 @@
 				6BC27E102961A7F10031CE3D /* AdvancedCharts.swift in Sources */,
 				6B988DCE2933BE85008B0DB5 /* ContentView.swift in Sources */,
 				6B988DCC2933BE85008B0DB5 /* PlayOn_iOSApp.swift in Sources */,
+				6BC27E122961AE460031CE3D /* PopulationProgressCharts.swift in Sources */,
 				6B8EA4FF295ED53500C4A3EB /* FirstTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
