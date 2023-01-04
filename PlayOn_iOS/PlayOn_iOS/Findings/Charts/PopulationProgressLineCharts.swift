@@ -31,6 +31,8 @@ struct PopulationProgressLineCharts: View {
                 .foregroundStyle(by: .value("Country", series.country))
                 // PointMark를 중첩하는 효과
                 .symbol(by: .value("Country", series.country))
+                // 꺾은선을 곡선으로
+                .interpolationMethod(.catmullRom)
             }
         }
     }
