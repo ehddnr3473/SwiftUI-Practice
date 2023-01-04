@@ -94,7 +94,12 @@ struct PopulationProgressCharts: View {
                 }
             }
         }
+        .padding(LayoutConstants.offset)
     }
+}
+
+private enum LayoutConstants {
+    static let offset: CGFloat = 20
 }
 
 struct PopulationProgressCharts_Previews: PreviewProvider {

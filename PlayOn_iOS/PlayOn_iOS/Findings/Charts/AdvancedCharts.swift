@@ -47,7 +47,12 @@ struct AdvancedCharts: View {
                 )
             }
         }
+        .padding(LayoutConstants.offset)
     }
+}
+
+private enum LayoutConstants {
+    static let offset: CGFloat = 20
 }
 
 struct AdvancedCharts_Previews: PreviewProvider {

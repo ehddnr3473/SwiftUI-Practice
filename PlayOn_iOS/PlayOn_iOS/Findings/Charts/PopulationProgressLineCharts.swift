@@ -35,7 +35,12 @@ struct PopulationProgressLineCharts: View {
                 .interpolationMethod(.catmullRom)
             }
         }
+        .padding(LayoutConstants.offset)
     }
+}
+
+private enum LayoutConstants {
+    static let offset: CGFloat = 20
 }
 
 struct PopulationProgressLineCharts_Previews: PreviewProvider {
