@@ -51,6 +51,13 @@ struct PopulationProgressCharts: View {
         }
     }
     
+    var average: Int {
+        let total = data.reduce(into: 0) { total, element in
+            total += element.population
+        }
+        return total/data.count
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .bottom) {
@@ -72,8 +79,18 @@ struct PopulationProgressCharts: View {
                     x: .value("Year", element.year),
                     y: .value("Population", element.population)
                 )
-                .annotation {
-                    Text("\(element.population)")
+                .foregroundStyle(.pink)
+//                .annotation {
+//                    Text("\(element.population)")
+//                }
+                RuleMark(
+                    y: .value("Average", average)
+                )
+                .lineStyle(StrokeStyle(lineWidth: 3))
+                .annotation(position: .top, alignment: .leading) {
+                    Text("Average: \(average, format: .number)")
+                        .font(.headline)
+                        .foregroundStyle(.blue)
                 }
             }
         }
