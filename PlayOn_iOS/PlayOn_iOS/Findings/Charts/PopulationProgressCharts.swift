@@ -72,6 +72,9 @@ struct PopulationProgressCharts: View {
                     x: .value("Year", element.year),
                     y: .value("Population", element.population)
                 )
+                .annotation {
+                    Text("\(element.population)")
+                }
             }
         }
     }
